@@ -4,7 +4,7 @@ storemaven spotify tracker home assignment
 # Set environment for running app
 1. clone project to dir
 2. in terminal: cd storemaven_spority_tracker/src
-3. in terminal: docker-compose up -d; (to track logs run> docker-compose logs -f)
+3. set mysql db -> in terminal: docker-compose up -d; (to track logs run> docker-compose logs -f)
 4. create tables -> in terminal: python3 utils/db_utils.py (also can run from IDE this module)
 5. start app -> in terminal: python3 spotify_tracker_app.py  (also can run from IDE this module)
 
