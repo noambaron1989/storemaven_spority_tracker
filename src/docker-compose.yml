@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  mysqlDb:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "rootpwd"
+      MYSQL_DATABASE: "devdb"
+      MYSQL_USER: "devuser"
+      MYSQL_PASSWORD: "devpwd"
+    ports:
+      - 3306:3306
+    volumes:
+      - devmysqldb:/var/lib/mysql
+
+volumes:
+  devmysqldb:
