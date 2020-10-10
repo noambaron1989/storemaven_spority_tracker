@@ -5,10 +5,10 @@ import codecs
 
 from flask import Flask, request, abort
 
-from models import category_manager_model, spotify_tracker_model
+from src.models import category_manager_model, spotify_tracker_model
 from src import constants
-from utils.spotify_utils import SpotifyClient
-from utils.db_utils import DataProvider
+from src.utils.spotify_utils import SpotifyClient
+from src.utils.db_utils import DataProvider
 
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)

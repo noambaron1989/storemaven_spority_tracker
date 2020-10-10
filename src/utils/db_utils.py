@@ -3,7 +3,7 @@ import logging
 import mysql
 from mysql.connector import MySQLConnection
 
-from models import category_manager_model, spotify_tracker_model
+from src.models import category_manager_model, spotify_tracker_model
 from src import constants
 
 
