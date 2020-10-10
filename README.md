@@ -18,14 +18,12 @@ POST 127.0.0.1:5000/entity/remove
 
 goot request:
 
-{
-	"categoryName": "Workout"
-	
-}
+{"categoryName": "Workout"}
 
 bad request:
 
 {}
+
 {"categoryName": "noam"} //not supported by spotify
 
 >Trigger track all categories we've created:
@@ -33,4 +31,5 @@ POST 127.0.0.1:5000/track
 
 valid requests:
 {} -> no dry run
+
 {"isDryRun" : 1} -> dry run: tracks will not be saved into db
