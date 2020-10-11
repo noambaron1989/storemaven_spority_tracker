@@ -9,8 +9,8 @@ msql_ip = '127.0.0.1'
 app_port = 5000
 
 # spotify
-sp_client_id = 'c5c0173b5087420cae9ea9e1b5708adf'
-sp_client_secret = '5d9229b9d4b241c380ccfb8453a935e2'
+sp_client_id = '<your_client_id>'
+sp_client_secret = '<your_client_secret>'
 sp_limit = 100
 sp_max_limit = 50
 sp_country = 'IL'
