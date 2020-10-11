@@ -6,6 +6,7 @@ storemaven spotify tracker home assignment
 2. in terminal: cd storemaven_spority_tracker/src
 3. set mysql db -> in terminal: docker-compose up -d; (to track logs run> docker-compose logs -f)
 4. create tables -> in terminal: python3 utils/db_utils.py (also can run from IDE this module)
+5. set your spotify client_id and secret in constants.py file
 5. start app -> in terminal: python3 spotify_tracker_app.py  (also can run from IDE this module)
 
 # Run API requests from postman
@@ -16,11 +17,11 @@ POST 127.0.0.1:5000/entity/create
 >Remove caregoty entity:
 POST 127.0.0.1:5000/entity/remove
 
-goot request:
+valid request:
 
 {"categoryName": "Workout"}
 
-bad request:
+non-valid request:
 
 {}
 
